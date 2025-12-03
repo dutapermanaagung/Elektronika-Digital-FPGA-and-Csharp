@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36422.26
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenhouseFSM", "GreenhouseFSM\GreenhouseFSM.csproj", "{030A347F-53A6-4938-BD8A-2A230F2B558F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{030A347F-53A6-4938-BD8A-2A230F2B558F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030A347F-53A6-4938-BD8A-2A230F2B558F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030A347F-53A6-4938-BD8A-2A230F2B558F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030A347F-53A6-4938-BD8A-2A230F2B558F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F1E7522-2577-4489-AC92-9A21F25D4483}
+	EndGlobalSection
+EndGlobal
