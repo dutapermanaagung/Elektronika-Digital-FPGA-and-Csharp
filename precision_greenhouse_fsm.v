@@ -5,7 +5,7 @@ module precision_greenhouse_fsm (
     input  wire [5:0] S,       
     output reg  [5:0] A,
     
-    // --- NAMA GRAFIK SESUAI REQUEST (SS0_IDLE, SS1_NUTRI...) ---
+    // SS0_IDLE, SS1_NUTRI...SS7_CHAOS
     output wire SS0_IDLE,
     output wire SS1_NUTRI,
     output wire SS2_WATER,
@@ -16,7 +16,7 @@ module precision_greenhouse_fsm (
     output wire SS7_CHAOS
 );
 
-    // Parameter Internal (Ganti nama dikit biar ga bentrok sama output)
+    // Parameter Internal
     parameter ST_IDLE      = 3'b000;
     parameter ST_NUTRI     = 3'b001;
     parameter ST_WATER     = 3'b010;
@@ -30,11 +30,8 @@ module precision_greenhouse_fsm (
     reg [2:0] next_state;
 
     // --- LOGIKA VISUALISASI ---
-    // IDLE & CHAOS = Linear 0 (Mati Terus)
     assign SS0_IDLE    = 1'b0; 
     assign SS7_CHAOS   = 1'b0; 
-
-    // SISANYA MENGIKUTI SENSOR (Bisa Overlap)
     assign SS1_NUTRI   = S[0]; 
     assign SS2_WATER   = S[1]; 
     assign SS3_TEMP    = S[2]; 
@@ -74,4 +71,5 @@ module precision_greenhouse_fsm (
             default:  A = 6'b000000;
         endcase
     end
+
 endmodule
